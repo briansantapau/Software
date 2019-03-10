@@ -1,0 +1,15 @@
+--
+-- File generated with SQLiteStudio v3.2.1 on Wed Feb 27 01:08:42 2019
+--
+-- Text encoding used: System
+--
+PRAGMA foreign_keys = off;
+BEGIN TRANSACTION;
+
+-- Table: Customers
+DROP TABLE IF EXISTS Customers;
+CREATE TABLE Customers ("Cust ID" INTEGER PRIMARY KEY UNIQUE NOT NULL, Nombre VARCHAR (20) NOT NULL, Apellido VARCHAR (50) NOT NULL, Telefono VARCHAR (12) NOT NULL, "Ordenes Realizadas" INTEGER NOT NULL, "Total Gastado" DOUBLE NOT NULL, Direcion TEXT);
+INSERT INTO Customers ("Cust ID", Nombre, Apellido, Telefono, "Ordenes Realizadas", "Total Gastado", Direcion) VALUES (0, 'Brian', 'Santapau', '787-951-4605', 2, 600.0, 'Calle 11 Casa 9');
+
+COMMIT TRANSACTION;
+PRAGMA foreign_keys = on;

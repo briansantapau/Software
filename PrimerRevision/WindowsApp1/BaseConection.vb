@@ -1,0 +1,3 @@
+﻿Module BaseConection
+
+End Module
